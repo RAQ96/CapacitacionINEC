@@ -1,0 +1,23 @@
+var express = require('express');
+var router = express.Router();
+
+router.use(express.urlencoded({extended:false}));
+router.use(express.json());
+
+router.get('/', (req, res) => {    
+    res.json(
+        {
+            "Title": "Hola mundo!"
+        }
+    );
+});
+
+router.post('/', (req, res) => {
+  res.json(
+      {
+          "Total": req.body.num1 + req.body.num2
+      }
+  );
+});
+
+module.exports = router;
