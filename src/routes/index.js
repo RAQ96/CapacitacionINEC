@@ -11,6 +11,9 @@ router.get('/', (req, res) => {
             "Title": "Hola mundo!"
         }
     );
+    return;
+
+    const password = 'Hola123';
 });
 
 router.post('/', (req, res) => {
