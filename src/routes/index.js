@@ -4,7 +4,8 @@ var router = express.Router();
 router.use(express.urlencoded({extended:false}));
 router.use(express.json());
 
-router.get('/', (req, res) => {    
+router.get('/', (req, res) => {
+    const a = 'Test';
     res.json(
         {
             "Title": "Hola mundo!"
